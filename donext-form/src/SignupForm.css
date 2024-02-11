@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*background-color: purple; /* For browsers that do not support gradients 
+  background-image: linear-gradient(90deg, purple, blue);*/
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: purple; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, purple, rgb(11, 8, 102));
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  transform: scale(0.98);
+  transition: transform 0.3s ease;
+  border: 2px solid #6c63ff;
+}
+
+.form-container:hover {
+  transform: scale(1);
+}
+
+.form-heading {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.875em;
+  color: #cfcfd8;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #cfcfd8;
+}
+
+.form-input {
+  padding: 15px;
+  border: 1px solid #6c63ff;
+  border-radius: 5px;
+  background-color: #40404e;
+  color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #6c63ff;
+}
+
+.form-input:focus {
+  border-color: #5a52db;
+  box-shadow: 0px 0px 5px 2px rgba(108, 99, 255, 0.1);
+  outline: none;
+}
+
+.form-error {
+  color: #ff4d4d;
+  font-size: 0.875em;
+  padding-top: 2px;
+}
+
+.form-button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #6c63ff 0%, #5a52db 100%);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px -3px rgba(108, 99, 255, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-button:hover {
+  background: linear-gradient(to right, #5a52db 0%, #6c63ff 100%);
+  box-shadow: 0px 10px 15px -3px rgba(90, 82, 219, 0.5);
+}
+ 
+h4 {
+  text-align: center;
+}
+/* Slide 3: ID Verification */
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dropzone p {
+  font-size: 16px;
+}
+
+.dropzone img {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+
+.dropzone input[type="file"] {
+  display: none;
+}
+
+.dropzone label {
+  display: block;
+  cursor: pointer;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.dropzone label:hover {
+  text-decoration: underline;
+}
+
+/* General Button Styling */
+button /* [type="submit"], button[type="button"]*/{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 35px;
+}
+
+
+button:hover /*[type="submit"]:hover, button[type="button"]:hover*/ {
+  background-color: #1a019a;
+}
+
+.previous-B{
+  float: inline-start;
+  margin-bottom: 10px;
+}
+
+.next-B{
+  margin-left: 400px;
+  /*float: inline-end;
+  margin-bottom: 10px;*/
+  
+}
+
+/* Slide Navigation */
+
+.P-link{
+  color: #070ff4;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
+
+.P-link:hover {
+  text-decoration: none;
+  color: #4996ee;
+}
